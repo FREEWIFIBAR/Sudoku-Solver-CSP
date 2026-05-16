@@ -59,7 +59,7 @@ resolver(Codes, Solucion) :-
 
 parse([], []).
 
-parse([46|Cs], [_|Vs]) :-     % '.'
+parse([46|Cs], [_|Vs]) :-
     parse(Cs, Vs).
 
 parse([C|Cs], [V|Vs]) :-
